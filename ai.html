@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student AI Tools Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #0f172a;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 12px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f5f9;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* CONTENT */
+        .content {
+            margin-top: 70px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="https://chat.openai.com" target="_blank">🤖 ChatGPT</a>
+    <a href="https://gemini.google.com" target="_blank">✨ Gemini</a>
+
+    <div class="dropdown">
+        <a href="#"> AI Tools ▾</a>
+        <div class="dropdown-content">
+            <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+            <a href="https://gemini.google.com" target="_blank">Gemini</a>
+            <a href="https://copilot.microsoft.com" target="_blank">Microsoft Copilot</a>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <h2>AI Tools for Students</h2>
+    <p>
+        Use AI tools responsibly for learning, understanding concepts,
+        and improving productivity.
+    </p>
+</div>
+
+</body>
+</html>
