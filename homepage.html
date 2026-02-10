@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Home Portal</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #0f172a;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f5f9;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* PAGE CONTENT */
+        .content {
+            margin-top: 90px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 260px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #2563eb;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .card a:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="sample.html">📚 Student Portal</a>
+    <a href="ai.html">🤖 AI Tools</a>
+
+    <div class="dropdown">
+        <a href="#">More ▾</a>
+        <div class="dropdown-content">
+            <a href="https://www.youtube.com" target="_blank">📺 YouTube</a>
+            <a href="mailto:studenthelp@gmail.com">📧 Email Support</a>
+        </div>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+    <h1>Welcome to Student Home Portal</h1>
+    <p>
+        One place to access your learning modules, AI tools,
+        and student resources.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📚 Student Portal</h3>
+            <p>Access notes, assignments, exams, and results.</p>
+            <a href="sample.html">Open Portal</a>
+        </div>
+
+        <div class="card">
+            <h3>🤖 AI Tools</h3>
+            <p>Use ChatGPT, Gemini, and Copilot for learning.</p>
+            <a href="ai.html">Open AI Tools</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
