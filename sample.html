@@ -1,93 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Portal Navbar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Traffic Management | Batch A05</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* NAVBAR */
-        .navbar {
-            background-color: #1f2933;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 12px;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 16px;
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        /* DROPDOWN */
-        .dropdown {
-            display: inline-block;
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #ffffff;
-            min-width: 160px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 10px;
-            display: block;
-            text-decoration: none;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* PAGE CONTENT */
-        .content {
-            margin-top: 70px;
-            padding: 20px;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
+        header { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #27ae60; padding-bottom: 5px; }
+        .team-list { list-style: none; padding: 0; }
+        .team-list li { background: #e8f4fd; margin: 5px 0; padding: 10px; border-radius: 4px; border-left: 5px solid #3498db; }
+        .tech-stack span { background: #27ae60; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8em; margin-right: 5px; }
+        footer { text-align: center; font-size: 0.9em; color: #7f8c8d; margin-top: 40px; }
     </style>
 </head>
 <body>
 
-<div class="navbar">
-    <a href="https://www.youtube.com" target="_blank">📺 YouTube</a>
-    <a href="mailto:studenthelp@gmail.com">📧 Email</a>
+<header>
+    <h1>Smart Traffic Management System</h1>
+    <p>Using Artificial Intelligence & Computer Vision</p>
+</header>
 
-    <div class="dropdown">
-        <a href="#">📚 Modules ▾</a>
-        <div class="dropdown-content">
-            <a href="#">Notes</a>
-            <a href="#">Assignments</a>
-            <a href="#">Exams</a>
-            <a href="#">Results</a>
-        </div>
+<div class="card">
+    <h2>Project Overview</h2>
+    <p>A dynamic traffic control system designed to replace fixed-time signals with real-time AI density analysis. Featuring emergency vehicle priority and a centralized dashboard for traffic monitoring.</p>
+</div>
+
+<div class="card">
+    <h2>Tech Stack</h2>
+    <div class="tech-stack">
+        <span>Python</span> <span>OpenCV</span> <span>TensorFlow</span> 
+        <span>ReactJS</span> <span>MySQL</span> <span>Google Maps API</span>
     </div>
 </div>
 
-<div class="content">
-    <h2>Welcome to Student Portal</h2>
-    <p>
-        Use the navigation bar above to access learning resources,
-        contact support, or watch educational videos.
-    </p>
+<div class="card">
+    <h2>Team Members (Batch A05)</h2>
+    <ul class="team-list">
+        <li><strong>23BQ1A0515</strong> – Annapureddy Naveen Reddy</li>
+        <li><strong>23BQ1A0518</strong> – Bandi Lakshmidhar Reddy</li>
+        <li><strong>23BQ1A0516</strong> – Appidi Sushmitha</li>
+        <li><strong>23BQ1A0541</strong> – Chandragiri Sanath Kumar</li>
+    </ul>
+    <p><strong>Guide:</strong> Mr. V. Koteswara Rao</p>
 </div>
+
+<footer>
+    <p>&copy; 2026 | Smart City Automation Domain</p>
+</footer>
 
 </body>
 </html>
