@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #1f2933;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 12px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* PAGE CONTENT */
+        .content {
+            margin-top: 70px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="https://www.youtube.com" target="_blank">📺 YouTube</a>
+    <a href="mailto:studenthelp@gmail.com">📧 Email</a>
+
+    <div class="dropdown">
+        <a href="#">📚 Modules ▾</a>
+        <div class="dropdown-content">
+            <a href="#">Notes</a>
+            <a href="#">Assignments</a>
+            <a href="#">Exams</a>
+            <a href="#">Results</a>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <h2>Welcome to Student Portal</h2>
+    <p>
+        Use the navigation bar above to access learning resources,
+        contact support, or watch educational videos.
+    </p>
+</div>
+
+</body>
+</html>
